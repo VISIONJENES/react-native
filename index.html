@@ -1,249 +1,95 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>React Native | A framework for building native apps using React</title><meta name="viewport" content="width=device-width"><meta property="og:title" content="React Native | A framework for building native apps using React"><meta property="og:type" content="website"><meta property="og:url" content="http://facebook.github.io/react-native/index.html"><meta property="og:image" content="http://facebook.github.io/react-native/img/opengraph.png?2"><meta property="og:description" content="A framework for building native apps using React"><link rel="shortcut icon" href="/react-native/img/favicon.png?2"><link rel="stylesheet" href="/react-native/css/react-native.css"><script type="text/javascript" src="//use.typekit.net/vqa1hcx.js"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script></head><body><div class="container"><div class="nav-main"><div class="wrap"><a class="nav-home" href="/react-native/"><img src="/react-native/img/header_logo.png">React Native</a><div class="nav-site-wrapper"><ul class="nav-site nav-site-internal"><li><a href="/react-native/docs/getting-started.html" class="">Docs</a></li><li><a href="/react-native/support.html" class="">Support</a></li><li><a href="https://github.com/facebook/react-native/releases" class="">Releases</a></li><li><a href="http://reactnative.cc" class="">Newsletter</a></li><li><a href="/react-native/showcase.html" class="">Showcase</a></li></ul><ul class="nav-site nav-site-external"><li><a href="https://github.com/facebook/react-native" class="">GitHub</a></li><li><a href="http://facebook.github.io/react" class="">React</a></li></ul></div></div></div><div class="hero"><div class="wrap"><div class="text"><strong>React Native</strong></div><div class="minitext">A framework for building native apps using React</div></div></div><section class="content wrap"><div style="margin:40px auto;max-width:800px;"><p>React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and <a href="http://facebook.github.io/react/">React</a>. The focus of React Native is on developer efficiency across all the platforms you care about — learn once, write anywhere. Facebook uses React Native in multiple production apps and will continue investing in React Native.</p></div><div class="buttons-unit"><a href="docs/getting-started.html#content" class="button">Get started with React Native</a></div><div style="margin:40px auto;max-width:800px;"><h2>Native Components</h2><p>With React Native, you can use the standard platform components such as UITabBar on iOS and Drawer on Android.  This gives your app a consistent look and feel with the rest of the platform ecosystem, and keeps the quality bar high.  These components are easily incorporated into your app using their React component counterparts, such as TabBarIOS and DrawerLayoutAndroid.</p><div class="prism language-javascript"><span class="token comment" spellcheck="true">// iOS
-</span>
-<span class="token keyword">var</span> React <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">&#x27;react-native&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> <span class="token punctuation">{</span> TabBarIOS<span class="token punctuation">,</span> NavigatorIOS <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<span class="token keyword">var</span> App <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createClass<span class="token punctuation">(</span></span><span class="token punctuation">{</span>
-  render<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      &lt;TabBarIOS<span class="token operator">&gt;</span>
-        &lt;TabBarIOS<span class="token punctuation">.</span>Item title<span class="token operator">=</span><span class="token string">&quot;React Native&quot;</span> selected<span class="token operator">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
-          &lt;NavigatorIOS initialRoute<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> title<span class="token punctuation">:</span> <span class="token string">&#x27;React Native&#x27;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
-        &lt;<span class="token operator">/</span>TabBarIOS<span class="token punctuation">.</span>Item<span class="token operator">&gt;</span>
-      &lt;<span class="token operator">/</span>TabBarIOS<span class="token operator">&gt;</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></div><div class="prism language-javascript"><span class="token comment" spellcheck="true">// Android
-</span>
-<span class="token keyword">var</span> React <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">&#x27;react-native&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> <span class="token punctuation">{</span> DrawerLayoutAndroid<span class="token punctuation">,</span> ProgressBarAndroid <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 
-<span class="token keyword">var</span> App <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createClass<span class="token punctuation">(</span></span><span class="token punctuation">{</span>
-  render<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      &lt;DrawerLayoutAndroid
-        renderNavigationView<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> &lt;Text<span class="token operator">&gt;</span>React Native&lt;<span class="token operator">/</span>Text<span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
-        &lt;ProgressBarAndroid <span class="token operator">/</span><span class="token operator">&gt;</span>
-      &lt;<span class="token operator">/</span>DrawerLayoutAndroid<span class="token operator">&gt;</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></div><h2>Asynchronous Execution</h2><p>All operations between the JavaScript application code and the native platform are performed asynchronously, and the native modules can also make use of additional threads as well.  This means we can decode images off of the main thread, save to disk in the background, measure text and compute layouts without blocking the UI, and more.  As a result, React Native apps are naturally fluid and responsive.  The communication is also fully serializable, which allows us to leverage Chrome Developer Tools to debug the JavaScript while running the complete app, either in the simulator or on a physical device.</p><p>See <a href="docs/debugging.html#content">Debugging</a>.</p><img src="/react-native/img/chrome_breakpoint.png" width="800" height="443"><h2>Touch Handling</h2><p>React Native implements a powerful system to negotiate touches in complex view hierarchies and provides high level components such as TouchableHighlight that integrate properly with scroll views and other elements without any additional configuration.</p><div class="prism language-javascript"><span class="token comment" spellcheck="true">// iOS &amp; Android
-</span>
-<span class="token keyword">var</span> React <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">&#x27;react-native&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> <span class="token punctuation">{</span> ScrollView<span class="token punctuation">,</span> TouchableHighlight<span class="token punctuation">,</span> Text <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
+  <title>React-native</title>
+  <meta name="description" content="A framework for building native apps with React.">
 
-<span class="token keyword">var</span> TouchDemo <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createClass<span class="token punctuation">(</span></span><span class="token punctuation">{</span>
-  render<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      &lt;ScrollView<span class="token operator">&gt;</span>
-        &lt;TouchableHighlight onPress<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> console<span class="token punctuation">.</span><span class="token function">log<span class="token punctuation">(</span></span><span class="token string">&#x27;pressed&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
-          &lt;Text<span class="token operator">&gt;</span>Proper Touch Handling&lt;<span class="token operator">/</span>Text<span class="token operator">&gt;</span>
-        &lt;<span class="token operator">/</span>TouchableHighlight<span class="token operator">&gt;</span>
-      &lt;<span class="token operator">/</span>ScrollView<span class="token operator">&gt;</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></div><h2>Flexbox and Styling</h2><p>Laying out views should be easy, which is why we brought the flexbox layout model from the web to React Native.  Flexbox makes it simple to build the most common UI layouts, such as stacked and nested boxes with margin and padding.  React Native also supports common web styles, such as fontWeight, and the StyleSheet abstraction provides an optimized mechanism to declare all your styles and layout right along with the components that use them and apply them inline.</p><div class="prism language-javascript"><span class="token comment" spellcheck="true">// iOS &amp; Android
-</span>
-<span class="token keyword">var</span> React <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">&#x27;react-native&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> <span class="token punctuation">{</span> Image<span class="token punctuation">,</span> StyleSheet<span class="token punctuation">,</span> Text<span class="token punctuation">,</span> View <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<span class="token keyword">var</span> ReactNative <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createClass<span class="token punctuation">(</span></span><span class="token punctuation">{</span>
-  render<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      &lt;View style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>row<span class="token punctuation">}</span><span class="token operator">&gt;</span>
-        &lt;Image
-          source<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>uri<span class="token punctuation">:</span> <span class="token string">&#x27;http://facebook.github.io/react/img/logo_og.png&#x27;</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
-          style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>image<span class="token punctuation">}</span>
-        <span class="token operator">/</span><span class="token operator">&gt;</span>
-        &lt;View style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>text<span class="token punctuation">}</span><span class="token operator">&gt;</span>
-          &lt;Text style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>title<span class="token punctuation">}</span><span class="token operator">&gt;</span>
-            React Native
-          &lt;<span class="token operator">/</span>Text<span class="token operator">&gt;</span>
-          &lt;Text style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>subtitle<span class="token punctuation">}</span><span class="token operator">&gt;</span>
-            Build high quality mobile apps using React
-          &lt;<span class="token operator">/</span>Text<span class="token operator">&gt;</span>
-        &lt;<span class="token operator">/</span>View<span class="token operator">&gt;</span>
-      &lt;<span class="token operator">/</span>View<span class="token operator">&gt;</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> styles <span class="token operator">=</span> StyleSheet<span class="token punctuation">.</span><span class="token function">create<span class="token punctuation">(</span></span><span class="token punctuation">{</span>
-  row<span class="token punctuation">:</span> <span class="token punctuation">{</span> flexDirection<span class="token punctuation">:</span> <span class="token string">&#x27;row&#x27;</span><span class="token punctuation">,</span> margin<span class="token punctuation">:</span> <span class="token number">40</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  image<span class="token punctuation">:</span> <span class="token punctuation">{</span> width<span class="token punctuation">:</span> <span class="token number">40</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">40</span><span class="token punctuation">,</span> marginRight<span class="token punctuation">:</span> <span class="token number">10</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  text<span class="token punctuation">:</span> <span class="token punctuation">{</span> flex<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> justifyContent<span class="token punctuation">:</span> <span class="token string">&#x27;center&#x27;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-  title<span class="token punctuation">:</span> <span class="token punctuation">{</span> fontSize<span class="token punctuation">:</span> <span class="token number">11</span><span class="token punctuation">,</span> fontWeight<span class="token punctuation">:</span> <span class="token string">&#x27;bold&#x27;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  subtitle<span class="token punctuation">:</span> <span class="token punctuation">{</span> fontSize<span class="token punctuation">:</span> <span class="token number">10</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></div><h2>Polyfills</h2><p>React Native is focused on changing the way view code is written.  For the rest, we look to the web for universal standards and polyfill those APIs where appropriate. You can use npm to install JavaScript libraries that work on top of the functionality baked into React Native, such as XMLHttpRequest, window.requestAnimationFrame, and navigator.geolocation.  We are working on expanding the available APIs, and are excited for the Open Source community to contribute as well.</p><div class="prism language-javascript"><span class="token comment" spellcheck="true">// iOS (Android support for geolocation coming)
-</span>
-<span class="token keyword">var</span> React <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">&#x27;react-native&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> <span class="token punctuation">{</span> Text <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
+</head>
 
-<span class="token keyword">var</span> GeoInfo <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createClass<span class="token punctuation">(</span></span><span class="token punctuation">{</span>
-  getInitialState<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">{</span> position<span class="token punctuation">:</span> <span class="token string">&#x27;unknown&#x27;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  componentDidMount<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    navigator<span class="token punctuation">.</span>geolocation<span class="token punctuation">.</span><span class="token function">getCurrentPosition<span class="token punctuation">(</span></span>
-      <span class="token punctuation">(</span>position<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState<span class="token punctuation">(</span></span><span class="token punctuation">{</span>position<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-      <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> console<span class="token punctuation">.</span><span class="token function">error<span class="token punctuation">(</span></span>error<span class="token punctuation">)</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  render<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      &lt;Text<span class="token operator">&gt;</span>
-        Position<span class="token punctuation">:</span> <span class="token punctuation">{</span>JSON<span class="token punctuation">.</span><span class="token function">stringify<span class="token punctuation">(</span></span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>position<span class="token punctuation">)</span><span class="token punctuation">}</span>
-      &lt;<span class="token operator">/</span>Text<span class="token operator">&gt;</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></div><h2>Extensibility</h2><p>It is certainly possible to create a great app using React Native without writing a single line of native code, but React Native is also designed to be easily extended with custom native views and modules - that means you can reuse anything you&#x27;ve already built, and can import and use your favorite native libraries.</p><h3>Creating iOS modules</h3><p>To create a simple iOS module, create a new class that implements the RCTBridgeModule protocol, and wrap the function that you want to make available to JavaScript in RCT_EXPORT_METHOD. Additionally, the class itself must be explicitly exported with RCT_EXPORT_MODULE();.</p><div class="prism language-javascript"><span class="token comment" spellcheck="true">// Objective-C
-</span>
-#import <span class="token string">&quot;RCTBridgeModule.h&quot;</span>
+<body>
 
-@interface <span class="token class-name">MyCustomModule</span> <span class="token punctuation">:</span> NSObject &lt;RCTBridgeModule<span class="token operator">&gt;</span>
-@end
+  <div class="wrapper">
+    <header>
+      <h1 class="title">React-native</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">A framework for building native apps with React.</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/VISIONJENES/react-native/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/VISIONJENES/react-native/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/VISIONJENES/react-native" class="code">View React-native on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-@implementation MyCustomModule
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
 
-<span class="token function">RCT_EXPORT_MODULE<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">
-// Available as NativeModules.MyCustomModule.processString
-</span><span class="token function">RCT_EXPORT_METHOD<span class="token punctuation">(</span></span>processString<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>input callback<span class="token punctuation">:</span><span class="token punctuation">(</span>RCTResponseSenderBlock<span class="token punctuation">)</span>callback<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-  <span class="token function">callback<span class="token punctuation">(</span></span>@<span class="token punctuation">[</span><span class="token punctuation">[</span>input stringByReplacingOccurrencesOfString<span class="token punctuation">:</span>@<span class="token string">&quot;Goodbye&quot;</span> withString<span class="token punctuation">:</span>@<span class="token string">&quot;Hello&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-@end</div><div class="prism language-javascript"><span class="token comment" spellcheck="true">// JavaScript
-</span>
-<span class="token keyword">var</span> React <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">&#x27;react-native&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> <span class="token punctuation">{</span> NativeModules<span class="token punctuation">,</span> Text <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<span class="token keyword">var</span> Message <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createClass<span class="token punctuation">(</span></span><span class="token punctuation">{</span>
-  <span class="token function">getInitialState<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">&#x27;Goodbye World.&#x27;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token function">componentDidMount<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    NativeModules<span class="token punctuation">.</span>MyCustomModule<span class="token punctuation">.</span><span class="token function">processString<span class="token punctuation">(</span></span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState<span class="token punctuation">(</span></span><span class="token punctuation">{</span>text<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  render<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      &lt;Text<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>text<span class="token punctuation">}</span>&lt;<span class="token operator">/</span>Text<span class="token operator">&gt;</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></div><h3>Creating iOS views</h3><p>Custom iOS views can be exposed by subclassing RCTViewManager, implementing a -(UIView *)view method, and exporting properties with the RCT_EXPORT_VIEW_PROPERTY macro.  Then a simple JavaScript file connects the dots.</p><div class="prism language-javascript"><span class="token comment" spellcheck="true">// Objective-C
-</span>
-#import <span class="token string">&quot;RCTViewManager.h&quot;</span>
+<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
 
-@interface <span class="token class-name">MyCustomViewManager</span> <span class="token punctuation">:</span> RCTViewManager
-@end
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
 
-@implementation MyCustomViewManager
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<span class="token function">RCT_EXPORT_MODULE<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<span class="token operator">-</span> <span class="token punctuation">(</span>UIView <span class="token operator">*</span><span class="token punctuation">)</span>view
-<span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>MyCustomView alloc<span class="token punctuation">]</span> init<span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<span class="token function">RCT_EXPORT_VIEW_PROPERTY<span class="token punctuation">(</span></span>myCustomProperty<span class="token punctuation">,</span> NSString<span class="token punctuation">)</span><span class="token punctuation">;</span>
-@end</div><div class="prism language-javascript"><span class="token comment" spellcheck="true">// JavaScript
-</span>
-<span class="token keyword">var</span> React <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">&#x27;react-native&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> <span class="token punctuation">{</span> requireNativeComponent <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-class <span class="token class-name">MyCustomView</span> extends <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
-  <span class="token function">render<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> &lt;NativeMyCustomView <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-MyCustomView<span class="token punctuation">.</span>propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
-  myCustomProperty<span class="token punctuation">:</span> React<span class="token punctuation">.</span>PropTypes<span class="token punctuation">.</span><span class="token function">oneOf<span class="token punctuation">(</span></span><span class="token punctuation">[</span><span class="token string">&#x27;a&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;b&#x27;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/VISIONJENES" class="avatar"><img src="https://avatars2.githubusercontent.com/u/10335988?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/VISIONJENES">VISIONJENES</a> maintains <a href="https://github.com/VISIONJENES/react-native">React-native</a></p>
 
-<span class="token keyword">var</span> NativeMyCustomView <span class="token operator">=</span> <span class="token function">requireNativeComponent<span class="token punctuation">(</span></span><span class="token string">&#x27;MyCustomView&#x27;</span><span class="token punctuation">,</span> MyCustomView<span class="token punctuation">)</span><span class="token punctuation">;</span>
-module<span class="token punctuation">.</span>exports <span class="token operator">=</span> MyCustomView<span class="token punctuation">;</span></div><h3>Creating Android modules</h3><p>Likewise, Android also supports custom extensions, the methods are just slightly different.</p><p>To create a simple module in Android, create a new class that extends the ReactContextBaseJavaModule class, and annotate the function that you want to make available to JavaScript with @ReactMethod. Additionally, the class itself must be registered in the ReactPackage of your React Native application.</p><div class="prism language-javascript"><span class="token comment" spellcheck="true">// Java
-</span>
-public class <span class="token class-name">MyCustomModule</span> extends <span class="token class-name">ReactContextBaseJavaModule</span> <span class="token punctuation">{</span>
-<span class="token comment" spellcheck="true">
-// Available as NativeModules.MyCustomModule.processString
-</span>  @ReactMethod
-  public void <span class="token function">processString<span class="token punctuation">(</span></span>String input<span class="token punctuation">,</span> Callback callback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    callback<span class="token punctuation">.</span><span class="token function">invoke<span class="token punctuation">(</span></span>input<span class="token punctuation">.</span><span class="token function">replace<span class="token punctuation">(</span></span><span class="token string">&quot;Goodbye&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</div><div class="prism language-javascript"><span class="token comment" spellcheck="true">// JavaScript
-</span>
-<span class="token keyword">var</span> React <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">&#x27;react-native&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> <span class="token punctuation">{</span> NativeModules<span class="token punctuation">,</span> Text <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">var</span> Message <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createClass<span class="token punctuation">(</span></span><span class="token punctuation">{</span>
-  <span class="token function">getInitialState<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">&#x27;Goodbye World.&#x27;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token function">componentDidMount<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    NativeModules<span class="token punctuation">.</span>MyCustomModule<span class="token punctuation">.</span><span class="token function">processString<span class="token punctuation">(</span></span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState<span class="token punctuation">(</span></span><span class="token punctuation">{</span>text<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  render<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      &lt;Text<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>text<span class="token punctuation">}</span>&lt;<span class="token operator">/</span>Text<span class="token operator">&gt;</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</div><h3>Creating Android views</h3><p>Custom Android views can be exposed by extending SimpleViewManager, implementing a createViewInstance and getName methods, and exporting properties with the @UIProp annotation. Then a simple JavaScript file connects the dots.</p><div class="prism language-javascript"><span class="token comment" spellcheck="true">// Java
-</span>
-public class <span class="token class-name">MyCustomViewManager</span> extends <span class="token class-name">SimpleViewManager</span>&lt;MyCustomView<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
 
-  private static final String REACT_CLASS <span class="token operator">=</span> <span class="token string">&quot;MyCustomView&quot;</span><span class="token punctuation">;</span>
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/VISIONJENES/react-native/tarball/master" class="tar">tar</a><a href="https://github.com/VISIONJENES/react-native/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
 
-  @<span class="token function">UIProp<span class="token punctuation">(</span></span>UIProp<span class="token punctuation">.</span>Type<span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
-  public static final String PROP_MY_CUSTOM_PROPERTY <span class="token operator">=</span> <span class="token string">&quot;myCustomProperty&quot;</span><span class="token punctuation">;</span>
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-15468890-3x");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
-  @Override
-  public String <span class="token function">getName<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> REACT_CLASS<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-
-  @Override
-  protected MyCustomView <span class="token function">createViewInstance<span class="token punctuation">(</span></span>ThemedReactContext reactContext<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">MyCustomView</span><span class="token punctuation">(</span>reactContext<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-
-  @Override
-  public void <span class="token function">updateView<span class="token punctuation">(</span></span>MyCustomView view<span class="token punctuation">,</span> CatalystStylesDiffMap props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    super<span class="token punctuation">.</span><span class="token function">updateView<span class="token punctuation">(</span></span>view<span class="token punctuation">,</span> props<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>props<span class="token punctuation">.</span><span class="token function">hasKey<span class="token punctuation">(</span></span>PROP_MY_CUSTOM_PROPERTY<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      view<span class="token punctuation">.</span><span class="token function">setMyCustomProperty<span class="token punctuation">(</span></span>props<span class="token punctuation">.</span><span class="token function">getString<span class="token punctuation">(</span></span>PROP_MY_CUSTOM_PROPERTY<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</div><div class="prism language-javascript"><span class="token comment" spellcheck="true">// JavaScript
-</span>
-<span class="token keyword">var</span> React <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">&#x27;react-native&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> <span class="token punctuation">{</span> requireNativeComponent <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-
-class <span class="token class-name">MyCustomView</span> extends <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
-  <span class="token function">render<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> &lt;NativeMyCustomView <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-MyCustomView<span class="token punctuation">.</span>propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
-  myCustomProperty<span class="token punctuation">:</span> React<span class="token punctuation">.</span>PropTypes<span class="token punctuation">.</span><span class="token function">oneOf<span class="token punctuation">(</span></span><span class="token punctuation">[</span><span class="token string">&#x27;a&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;b&#x27;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token keyword">var</span> NativeMyCustomView <span class="token operator">=</span> <span class="token function">requireNativeComponent<span class="token punctuation">(</span></span><span class="token string">&#x27;MyCustomView&#x27;</span><span class="token punctuation">,</span> MyCustomView<span class="token punctuation">)</span><span class="token punctuation">;</span>
-module<span class="token punctuation">.</span>exports <span class="token operator">=</span> MyCustomView<span class="token punctuation">;</span>
-</div></div><section class="home-bottom-section"><div class="buttons-unit"><a href="docs/getting-started.html#content" class="button">Get started with React Native</a></div></section></section><footer class="wrap"><div class="center">© 2015 Facebook Inc.</div></footer></div><div id="fb-root"></div><script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-41298772-2', 'facebook.github.io');
-            ga('send', 'pageview');
-
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)
-            ){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-          </script><script src="/react-native/js/scripts.js"></script></body></html>
+</body>
+</html>
